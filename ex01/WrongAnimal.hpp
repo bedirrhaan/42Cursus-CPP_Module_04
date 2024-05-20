@@ -1,6 +1,6 @@
-#pragma once
-
-#include <string>
+#ifndef WRONG_HPP
+# define WRONG_HPP
+#include <iostream>
 
 class WrongAnimal
 {
@@ -16,13 +16,4 @@ class WrongAnimal
 		std::string getType() const;
 };
 
-class WrongCat : public WrongAnimal
-{
-	public:
-		WrongCat();
-		WrongCat(WrongCat const &a);
-		WrongCat &operator=(WrongCat const &a);
-		~WrongCat();
-
-		void makeSound() const;
-};
+#endif

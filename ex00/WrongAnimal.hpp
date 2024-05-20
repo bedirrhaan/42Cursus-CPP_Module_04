@@ -1,7 +1,6 @@
-#ifndef WRONG_HPP
-# define WRONG_HPP
-
-#include <string>
+#ifndef WRONGANIMAL_HPP
+# define WRONGANIMAL_HPP
+# include <iostream>
 
 class WrongAnimal
 {
@@ -15,17 +14,6 @@ class WrongAnimal
 
 		void makeSound() const;
 		std::string getType() const;
-};
-
-class WrongCat : public WrongAnimal
-{
-	public:
-		WrongCat();
-		WrongCat(WrongCat const &a);
-		WrongCat &operator=(WrongCat const &a);
-		~WrongCat();
-
-		void makeSound() const;
 };
 
 #endif
